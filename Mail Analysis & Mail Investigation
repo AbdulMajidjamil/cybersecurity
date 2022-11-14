@@ -8,33 +8,33 @@
 📩 First, let me explain the basics of the mail:
 🔰 Mail User Agent (MUA) Computer Application that allows you to send and receive mail (Firefox Thunderbird, Microsoft Outlook,….etc).
 
-🔰 Mail Submission Agent (MSA) the server that receives the message from MUA and sends it to MTA.
-MTA  السيرفر اللي بياخد الرساله من الابليكشن وبيبعتها لل
+🔰 Mail Submission Agent (MSA) the server that receives the message from the MUA and sends it to the MTA.
+MTA is the server that takes the message from the application and sends it to
 
 🔰 Mail Transfer Agent (MTA) Accepts message from the (MSA), route it, and forward outgoing e-mails for delivery.  
 Mail Delivery Agent (MDA) Server that provides the mail message to the recipient after successful authentication.
 
 📩 Second, DMRK Record
 ⚠️ SPF Record helps servers verify that messages coming from a particular domain are sent from servers authorized by the domain owner.
-بيقولي اي هو الدومين المسمحلوه  انه يبعت ميل بأستخدام الاسم بتاعي (يعني ال ip:1.1.1.1  او domain: example )
-(example.com)مسمحلوه انه يبعت ميل بأستخدام الدومين
+It tells me which domain is allowed to send a mail using my name (meaning the ip: 1.1.1.1 or domain: example )
+(example.com) They allowed him to send email using the domain
   SPF: example.com: 1.1.1.1
 
-👽 For example; SPF Record (Google.com)
+👽For example; SPF Record (Google.com)
 is: v=spf1 include:_spf.google.com ~all
 👽To check SPF Record: mxtoolbox.com/spf.aspx
 
 
-⚠️ DKIM adds digital signature to every message. This lets receiving servers verify that messages are not forget and not changed during transit.
-يعني اي الكلام ده ,,,  ببساطه,, بتاخد جسم الميل ويعملهو هاش بعد كده
- Publishing for public key بتاخده وتعمله تشفير وبيعمل
- Private key وبيكون عنده هو بس ال
-MDA فالما توصل الناحيه التانيه عند المستلم
- Decryption with public key ياخد الرساله ويعملها
-hash اللي اتبعتله من الجانب الاخر  ويشوف ال
-بتاعه نفس اللي اتبعتت بيه ولاه اتغير .
+⚠️ DKIM adds digital signature to every message. This lets receiving servers verify that messages are not forgotten and not changed during transit.
+I mean, what is this word,,, simply, you take the body of the tendency and make it a hash after that
+ Publishing for public key
+ Private key
+MDA When you reach the other side at the recipient
+ Decryption with public key
+hash that you follow from the other side and see the
+It is the same as the one that followed it, and it does not change.
 _____
 🔥Notes:
-اللي جايلك منه ال ميل بلوك زي mail server اوعي تعمل لل
-google , yahoo , Sendgrid, Mailgun, Amazon SES,…..etc
-عليه host  عشان طبيعي ان حد ي
+The one who brought you the mail block is like a mail server, don't you work for
+google, yahoo, Sendgrid, Mailgun, Amazon SES,…..etc
+It is host because it is natural that someone j
