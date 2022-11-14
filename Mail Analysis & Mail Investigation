@@ -7,10 +7,8 @@
 
 📩 First, let me explain the basics of the mail:
 🔰 Mail User Agent (MUA) Computer Application that allows you to send and receive mail (Firefox Thunderbird, Microsoft Outlook,….etc).
-
 🔰 Mail Submission Agent (MSA) the server that receives the message from the MUA and sends it to the MTA.
 MTA is the server that takes the message from the application and sends it to
-
 🔰 Mail Transfer Agent (MTA) Accepts message from the (MSA), route it, and forward outgoing e-mails for delivery.  
 Mail Delivery Agent (MDA) Server that provides the mail message to the recipient after successful authentication.
 
@@ -18,7 +16,7 @@ Mail Delivery Agent (MDA) Server that provides the mail message to the recipient
 ⚠️ SPF Record helps servers verify that messages coming from a particular domain are sent from servers authorized by the domain owner.
 It tells me which domain is allowed to send a mail using my name (meaning the ip: 1.1.1.1 or domain: example )
 (example.com) They allowed him to send email using the domain
-  SPF: example.com: 1.1.1.1
+SPF: example.com: 1.1.1.1
 
 👽For example; SPF Record (Google.com)
 is: v=spf1 include:_spf.google.com ~all
@@ -37,4 +35,4 @@ _____
 🔥Notes:
 The one who brought you the mail block is like a mail server, don't you work for
 google, yahoo, Sendgrid, Mailgun, Amazon SES,…..etc
-It is host because it is natural that someone j
+It is host because it is natural that someone
