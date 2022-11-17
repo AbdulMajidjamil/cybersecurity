@@ -197,3 +197,6 @@ Test For Common Vulnerabilities
 [ ] Test for business logic errors
 [ ] Test for TCP/UDP attacks
 [ ] Test with automated scanning tools (Use Visual Code Grepper - VCG)
+
+
+Medium : https://medium.com/@abdulmajidjamil/owasp-based-penetration-testing-checklist-2565d54c76f7
